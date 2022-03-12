@@ -1,0 +1,17 @@
+rows=int(input('Enter the number of rows'))
+cols=int(input('Enter the number of columns'))
+matrix=[]
+for i in range(rows):
+    print('Enter the elements of ', i+1, 'th row')
+    tmp=[]
+    for j in range(cols):
+        tmp.append(int(input('')))
+    matrix.append(tmp)
+
+transposed=[]
+for i in range(cols):
+    lst=[]
+    for j in range(rows):
+        lst.append(matrix[j][i])
+    transposed.append(lst)
+print(transposed)

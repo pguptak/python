@@ -1,0 +1,8 @@
+def facto(num):
+    f=1
+    for i in range(1,num+1):
+        f*=i
+    return f
+s=int(input('Enter the number to calculate the factorial for '))
+fact=facto(s)
+print(fact)

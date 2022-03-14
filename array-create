@@ -1,0 +1,10 @@
+#Code to create an array and insert values in it
+
+n=int(input("Enter the number of element to input in array"))
+lst=[0 for i in range(n)] #initialize an array
+print("Enter the array elements:")
+for i in range(n):
+    lst[i]=int(input("Enter the {}th number".format(i+1)))
+print("The array elements are:")
+for i in range(n):
+    print(lst[i])
